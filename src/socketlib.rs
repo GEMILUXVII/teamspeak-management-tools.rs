@@ -225,7 +225,7 @@ impl SocketConn {
         pid: i64,
     ) -> QueryResult<Option<CreateChannel>> {
         let payload = format!(
-            "channelcreate channel_name={name} cpid={pid} channel_codec_quality=6\n\r",
+            "channelcreate channel_name={name} cpid={pid} channel_codec_quality=10\n\r",
             name = Self::escape(name),
             pid = pid
         );
